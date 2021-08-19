@@ -1,6 +1,8 @@
 const {ceaserCipher} = require("./functions.js");
-
-console.log(ceaserCipher("אבגד", 
-                        "אבגדהוזחטיכלמנסעפצקרשת",
-                        -1,
-                        true));
+let englishText = "ifmmp";
+let hebrewText = "אבג";
+let englishAlphabet = "abcdefghijklmnopqrstuvwxyz";
+let hebrewAlphabet = "אבגדהוזחטיכלמנסעפצקרשת"
+let offset = -1;
+let rtl = true;
+console.log(ceaserCipher(hebrewText, hebrewAlphabet, offset, rtl));
